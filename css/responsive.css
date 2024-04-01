@@ -1,0 +1,207 @@
+@media screen and (max-width: 1200px) {
+    .desktop-header nav ul li a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .desktop-header .search-icon {
+        margin: 0 50px 0 0;
+    }
+
+    .desktop-header .search-icon::after {
+        right: -28px;
+    }
+
+    .desktop-header nav ul li a.arrow::after {
+        right: -3px;
+    }
+
+    .slider-right-section img {
+        width: 100%;
+    }
+
+    .slider-right-section .rotate {
+        width: 100%;
+        top: -35px;
+        right: 20px;
+    }
+
+    .slide {
+        height: 430px;
+    }
+
+    .slider {
+        height: 550px;
+    }
+    .container{
+        max-width: 1140px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .mobile-header {
+        display: flex;
+    }
+
+    .desktop-header {
+        display: none;
+    }
+
+    .slide .slider-left-section h1 {
+        font-size: 45px;
+    }
+
+    .slide .slider-left-section h2 {
+        font-size: 45px;
+    }
+
+    .secondearyMenu-Wrapper {
+        display: none;
+    }
+    
+    .col-2 {
+        width: calc(100% - 20px);
+    }
+    .about-right-wrap{
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    .about-left-wrap img{
+        max-width: 100%;
+    }
+    .aboutSectionWrapper{
+        padding: 30px 0;
+    }
+    .ourProcessWrapper{
+        padding: 30px 0;
+    }
+    .container{
+        max-width: 94%;
+    }
+    .restMenuWrapper{
+        padding: 30px 0;
+    }
+    .videoSectionWrapper{
+        padding: 30px 0;
+    }
+    .reservationFormWrapper{
+        width: 82%;
+        margin: 0 8%;
+    }
+    .swing{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .slide {
+        height: 786px;
+        display: block;
+    }
+
+    .slider {
+        height: 786px;
+    }
+
+    .slider-right-section {
+        width: 42%;
+        margin: 0 auto;
+    }
+
+    .slide .slider-left-section {
+        text-align: center;
+        padding: 0 50px;
+        margin-bottom: 25px;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .callToAction-Block{
+        flex-wrap: wrap;
+    }
+    .callToActionContent{
+        margin: 20px 0;
+    }
+    .col-4{
+        width: calc(50% - 20px);
+    }
+    .container {
+        max-width: 90%;
+    }
+    .slider_slide{
+        display: block !important;
+    }
+    .teamMemberBlock{
+        width: 100%;
+    }
+    .slider_nav{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .slide .slider-left-section h1 {
+        font-size: 25px;
+
+    }
+    .slider-right-section .rotate {
+        top: 0;
+        right: 0;
+    }
+    .slider {
+        height: 100vh;
+    }
+    .slide .slider-left-section h2 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    .slider-left-section p {
+        font-size: 14px;
+
+        padding: 5px 0 15px;
+    }
+    .dots-container{
+        top: 20%;
+    }
+    .aboutSectionWrapper .col-2::before{
+        display: none;
+    }
+    .about-list-block{
+        display: block;
+    }
+    .ceo-segn-block{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .about-list-block .about-list ul{
+        border:0;
+        padding-right: 0;
+    }
+    .slider-right-section {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
+    
+    .col-3 {
+        width: calc(100% - 20px);
+    }
+    .col-4{
+        width: calc(100% - 20px);
+    }
+    #VisaChipCardVideo{width: 300px;}
+    .dinnerTimeWrap::before{
+        display: none;
+    }
+    .dinnerTimeWrap::after{
+        display: none;
+    }
+}

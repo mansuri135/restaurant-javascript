@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,600;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header>
+        <div class="desktop-header">
+            <div class="logo"><a href="#"><img src="img/logo.png" alt="logo" title="logo" /></a></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown-toggle"><a href="#" class="arrow">Pages</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Landing Page</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li class="dropdown-toggle"><a href="#">Our Services +</a>
+                                <ul class="innsubMenu">
+                                    <li><a href="#">Services List</a></li>
+                                    <li><a href="#">Services Grid</a></li>
+                                    <li><a href="#">Services Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-toggle"><a href="#">Shop +</a>
+                                <ul class="innsubMenu">
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu</a></li>
+                    <li class="dropdown-toggle"><a href="#" class="arrow">Portfolio</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Landing Page</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li class="dropdown-toggle"><a href="#">Our Services +</a>
+                                <ul class="innsubMenu">
+                                    <li><a href="#">Services List</a></li>
+                                    <li><a href="#">Services Grid</a></li>
+                                    <li><a href="#">Services Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-toggle"><a href="#">Shop +</a>
+                                <ul class="innsubMenu">
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="h-icons" onclick="myHumbergMenu(this)">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </a>
+                <a href="#" class="btn-default">Book A Table</a>
+            </div>
+        </div>
+        <div class="mobile-header">
+            <a href="#" class="moibleHumberIcon" onclick="myHumbergMenu(this)">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </a>
+            <div class="logo"><a href="#"><img src="img/logo.png" alt="logo" title="logo" /></a></div>
+            <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </header>
+    <!-- Banner Section Start -->
+    <section class="bannerSliderWrapper">
+        <div class="slider">
+            <div class="slide">
+                <div class="slider-left-section">
+                    <h1>Good Food Made Easy</h1>
+                    <h2>Are You Hungry?</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the
+                        industry’s standard dummy text ever since the an unknown printer took a galley.</p>
+                    <a href="#" class="btn-default">Learn More</a>
+                </div>
+                <div class="slider-right-section">
+                    <img src="img/banner-img01.png" alt="banner" />
+                    <img src="img/leaf-circle.png" class="rotate" alt="banner" />
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slider-left-section">
+                    <h1>Special Dinner for You</h1>
+                    <h2>Delicious Foods </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the
+                        industry’s standard dummy text ever since the an unknown printer took a galley.</p>
+                    <a href="#" class="btn-default">Learn More</a>
+                </div>
+                <div class="slider-right-section">
+                    <img src="img/banner-img02.png" alt="banner" />
+                    <img src="img/leaf-circle.png" class="rotate" alt="banner" />
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slider-left-section">
+                    <h1>Tastes Like a Paradise</h1>
+                    <h2>Today Special Menu</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the
+                        industry’s standard dummy text ever since the an unknown printer took a galley.</p>
+                    <a href="#" class="btn-default">Learn More</a>
+                </div>
+                <div class="slider-right-section">
+                    <img src="img/banner-img03.png" alt="banner" />
+                    <img src="img/leaf-circle.png" class="rotate" alt="banner" />
+                </div>
+            </div>
+
+        </div>
+        <div class="dots-container">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+        <div class="swing">
+            <img src="img/tomoto-draw.png" alt="tomoto" />
+        </div>
+    </section>
+
+
+    <!-- About Us Section Start -->
+    <section class="aboutSectionWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="counter">
+                        <h3><span id="Clients">0</span>+</h3>
+                        <h4>Years Of <br /> Experience</h4>
+                    </div>
+                    <div class="about-left-wrap">
+                        <img src="img/aboutImage.jpg" alt="about" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="about-right-wrap">
+                        <h6>About Us</h6>
+                        <h2>Enjoy an Exceptional <br />Journey of Taste</h2>
+                        <span class="seprator"></span>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta explicabo.</p>
+                        <div class="about-list-block">
+                            <div class="about-list">
+                                <ul>
+                                    <li><i class="fa-sharp fa-solid fa-square-check"></i>Project Quality Management Plan
+                                    </li>
+                                    <li><i class="fa-sharp fa-solid fa-square-check"></i>The Ability to Delegate Tasks
+                                    </li>
+                                    <li><i class="fa-sharp fa-solid fa-square-check"></i>It might be a finished or
+                                        unfinished</li>
+                                </ul>
+
+                            </div>
+                            <div class="ceo-segn-block">
+                                <img src="img/signature-pics.png" alt="sign" />
+                                <h5>CEO and Founder</h5>
+                            </div>
+
+                        </div>
+                        <a href="#" class="btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Process Section Start -->
+    <section class="ourProcessWrapper">
+        <div class="section-title">
+            <h6>Our Process</h6>
+            <h2>Healthy & Improves Your Mood</h2>
+            <span class="divider-seprator"></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="numberWrap">
+                        <img src="img/process-icon01.png" alt="process" />
+                        <div class="numberBl">01</div>
+                    </div>
+                    <div class="ourProcessBlock">
+                        <h4>Clean Bar</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry ipsum.</p>
+                        <img src="img/process-img01.jpg" alt="process" />
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="numberWrap">
+                        <img src="img/process-icon02.png" alt="process" />
+                        <div class="numberBl">02</div>
+                    </div>
+                    <div class="ourProcessBlock">
+                        <h4>Skilled Chefs</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry ipsum.</p>
+                        <img src="img/process-img02.jpg" alt="process" />
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="numberWrap">
+                        <img src="img/process-icon03.png" alt="process" />
+                        <div class="numberBl">03</div>
+                    </div>
+                    <div class="ourProcessBlock">
+                        <h4>Fresh Products</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry ipsum.</p>
+                        <img src="img/process-img03.jpg" alt="process" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Start -->
+    <section class="callToActionWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="callToAction-Block">
+                    <img src="img/call-action-icon.png" alt="calltoaction" />
+                    <div class="callToActionContent">
+                        <h5>We Have 25+ Years of Experience, Give Better Quality Results</h5>
+                        <p>Perspiciatis unde omnis iste natus error sit voluptatem laudantium, totam rem, eaque ipsa
+                            quae</p>
+                    </div>
+                    <a href="#" class="btn-default">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section Start -->
+    <section class="videoSectionWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="video-left-section">
+                        <h6>Get In Touch</h6>
+                        <h2>Find Us Here. Make Real Results Happen.</h2>
+                        <span class="seprator"></span>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star selected"></i>
+                            <i class="fa-solid fa-star selected"></i>
+                            <i class="fa-solid fa-star selected"></i>
+                            <i class="fa-solid fa-star selected"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Trust Score 4.0 (Based on 1,200 reviews)</p>
+                        <p class="readFeedbackBtn"><i class="fa-solid fa-face-smile"></i> <a href="#">READ FEEDBACK</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="video-right-section">
+                        <a href="#" class="popup-trigger-icon" onclick="lightbox_open();">
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </a>
+                        <div id="light">
+                            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                            <video id="VisaChipCardVideo" width="600" controls>
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                <!--Browser does not support <video> tag -->
+                            </video>
+                        </div>
+
+                        <div id="fade" onClick="lightbox_close();"></div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Our Menu Section Start -->
+    <section class="restMenuWrapper">
+        <div class="section-title">
+            <h6>From Our Menu</h6>
+            <h2>Delicious Food Forever</h2>
+            <span class="divider-seprator"></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="restMenuList">
+                        <div class="restMenuBlock">
+                            <img src="img/menu-img01.jpg" alt="menu" />
+                            <div class="menuItemName">
+                                <h5><a href="#">Raw Scallops from Erquy</a></h5>
+                                <p>Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                            <div class="menuRupees">$32.08</div>
+                        </div>
+                        <div class="restMenuBlock">
+                            <img src="img/menu-img02.jpg" alt="menu" />
+                            <div class="menuItemName">
+                                <h5><a href="#">Greek Salab</a></h5>
+                                <p>Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                            <div class="menuRupees">$32.08</div>
+                        </div>
+                        <div class="restMenuBlock">
+                            <img src="img/menu-img03.jpg" alt="menu" />
+                            <div class="menuItemName">
+                                <h5><a href="#">Tender Octopus and Fennel</a></h5>
+                                <p>Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                            <div class="menuRupees">$32.08</div>
+                        </div>
+                        <div class="restMenuBlock">
+                            <img src="img/menu-img04.jpg" alt="menu" />
+                            <div class="menuItemName">
+                                <h5><a href="#">Celeriac and Truffle Ravioli</a></h5>
+                                <p>Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                            <div class="menuRupees">$32.08</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="restMenuList">
+                        <div class="restMenuBlock">
+                            <img src="img/menu-img01.jpg" alt="menu" />
+                            <div class="menuItemName">
+                                <h5><a href="#">Raw Scallops from Erquy</a></h5>
+                                <p>Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                            <div class="menuRupees">$32.08</div>
+                        </div>
+                        <div class="restMenuBlock">
+                            <img src="img/menu-img02.jpg" alt="menu" />
+                            <div class="menuItemName">
+                                <h5><a href="#">Greek Salab</a></h5>
+                                <p>Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                            <div class="menuRupees">$32.08</div>
+                        </div>
+                        <div class="restMenuBlock">
+                            <img src="img/menu-img03.jpg" alt="menu" />
+                            <div class="menuItemName">
+                                <h5><a href="#">Tender Octopus and Fennel</a></h5>
+                                <p>Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                            <div class="menuRupees">$32.08</div>
+                        </div>
+                        <div class="restMenuBlock">
+                            <img src="img/menu-img04.jpg" alt="menu" />
+                            <div class="menuItemName">
+                                <h5><a href="#">Celeriac and Truffle Ravioli</a></h5>
+                                <p>Candied Jerusalem artichokes, truffle</p>
+                            </div>
+                            <div class="menuRupees">$32.08</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dinnerTimeSection">
+                    <div class="dinnerTimeWrap">
+                        During winter daily from <span class="primary-color">8:30 am</span> to <span
+                            class="primary-color">9.00
+                            pm</span> </div>
+                    <a href="#" class="border-default">Browse Menus</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Reservation Section Start -->
+    <section class="reservationWrapper">
+
+        <div class="section-title">
+            <h6>Make an Reserve</h6>
+            <h2>Online Reservation</h2>
+            <span class="divider-seprator"></span>
+        </div>
+        <div class="container">
+            <div class="reservationSection">
+                <div class="row">
+                    <div class="reservationFormWrapper">
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Phone" />
+                        <select name="" id="">
+                            <option value="">1 Person</option>
+                            <option value="">2 Person</option>
+                            <option value="">3 Person</option>
+
+                        </select>
+                        <input type="date" id="birthday" name="birthday" />
+                        <select name="" id="">
+                            <option value="">06:00 PM</option>
+                            <option value="">07:00 PM</option>
+                            <option value="">08:00 PM</option>
+
+                        </select>
+                        <a href="#" class="btn-default">Book A Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section Start -->
+    <section class="counterSecWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="counter">
+                        <h3><span id="Foundation">0</span>+</h3>
+                        <h5>Years of Foundation</h5>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="counter">
+                        <h3><span id="SatisfyClients">0</span>+</h3>
+                        <h5>Satisfied Clients</h5>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="counter">
+                        <h3><span id="Global">0</span>+</h3>
+                        <h5>Global Reach</h5>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="counter">
+                        <h3><span id="Awards">0</span>+</h3>
+                        <h5>Awards Winning</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Team Section Start -->
+    <section class="teamWrapper">
+        <div class="section-title">
+            <h6>Amazing Team</h6>
+            <h2>Meet Our Chefs</h2>
+            <span class="divider-seprator"></span>
+        </div>
+        <div class="container">
+        <div class="team-slider">
+            <div class="slider_slides-cont">
+                <div class="slider_slide">
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img01.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img02.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img03.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="slider_slide">
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img03.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img01.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img02.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="slider_slide">
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img03.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img02.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                    <div class="teamMemberBlock">
+                        <img src="img/team-img01.jpg" alt="team" />
+                        <div class="team-content">
+                            <div class="team-left">
+                                <h4>Daniel Matthew</h4>
+                                <p>Resta Marketing</p>
+                            </div>
+                            <img src="img/team-badge.png" alt="badge" />
+                        </div>
+                    </div>
+                   
+                </div>
+                
+
+            </div>
+            <div class="slider_pagination"></div>
+            <button class="slider_nav previous">&larr; Previous</button>
+            <button class="slider_nav next">Next &rarr;</button>
+        </div>
+    </div>
+    </section>
+    <!-- Footer Section Start -->
+   <footer class="footerWrapper">
+    <section class="callUsWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="call-us-block">
+                        <h4>Call Us On :</h4>
+                        <a href="tel:+(528)456-7592">+(528) 456-7592</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="call-us-block">
+                        <h4>Open Hours :</h4>
+                        <span class="primary-color">7.00 AM - 11.15 PM</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="call-us-block">
+                        <h4>Mail Us :</h4>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footerArea">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="footer-col-1">
+                        <a href="#"><img src="img/logo.png" alt="logo" /></a>
+                        <p>Lorem ipsum dolor sit amet, elit. Aenean ligula eget dolor. Lorem ipsum dolor sit amet, consect to adipisicing elit. Ut enim ad minim veniam. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, quis us elit aboris nisi.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-col-2">
+                        <h4>Our Services</h4>
+                        <span class="seprator"></span>
+                        <ul>
+                            <li><a href="#">Fast Delivery</a></li>
+                            <li><a href="#">Vegan Cuisine</a></li>
+                            <li><a href="#">Fresh Products</a></li>
+                            <li><a href="#">Skilled Chefs</a></li>
+                            <li><a href="#">Great Coffee</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-col-2">
+                        <h4>Quick Links</h4>
+                        <span class="seprator"></span>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-col-2">
+                        <h4>Quick Links</h4>
+                        <span class="seprator"></span>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copyrightWrapper">
+        <p>Copyrights © 2023 <span class="primary-color">Restaurt.</span> Designed by <span class="primary-color">Zozothemes</span></p>
+    </section>
+
+   </footer>
+    <!-- Secondary Menu Start -->
+    <section class="secondearyMenu-Wrapper">
+
+        <a href="#" class="closeBtn">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </a>
+        <div class="secondearyMenu-blockOne">
+            <a href="#"><img src="img/logo.png" alt="logo" title="logo" /></a>
+            <p>Order healthy and fresh food any time, Enjoy an exceptional journey of taste.</p>
+        </div>
+        <div class="secondearyMenu-blockTwo">
+            <h3>Contact Info</h3>
+            <p><i class="fa-solid fa-location-dot"></i> <span>684 West College St. Sun City, United States America,
+                    064781.</span></p>
+            <p><i class="fa-solid fa-headphones-simple"></i> <a href="tel:+(528)456-7592">+(528) 456-7592</a></p>
+            <p><i class="fa fa-envelope"></i> <a href="tel:info@restaurt.com">info@restaurt.com</a></p>
+        </div>
+        <div class="secondearyMenu-blockThree">
+            <h3>Get Updates</h3>
+            <div class="input-group">
+                <input type="text" class="form-control" required="required" placeholder="Email Address">
+                <input class="btn-default" type="button" name="Sign Up" value="Sign Up">
+            </div>
+        </div>
+        <div class="secondearyMenu-blockFour">
+            <ul>
+                <li><a href="#"><img src="img/product-img01.jpg" onclick="openModal();currentSlide(1)"
+                            alt="product" /></a></li>
+                <li><a href="#"><img src="img/product-img02.jpg" onclick="openModal();currentSlide(2)"
+                            alt="product" /></a></li>
+                <li><a href="#"><img src="img/product-img03.jpg" onclick="openModal();currentSlide(3)"
+                            alt="product" /></a></li>
+                <li><a href="#"><img src="img/product-img04.jpg" onclick="openModal();currentSlide(4)"
+                            alt="product" /></a></li>
+                <li><a href="#"><img src="img/product-img01.jpg" onclick="openModal();currentSlide(5)"
+                            alt="product" /></a></li>
+                <li><a href="#"><img src="img/product-img02.jpg" onclick="openModal();currentSlide(6)"
+                            alt="product" /></a></li>
+                <li><a href="#"><img src="img/product-img03.jpg" onclick="openModal();currentSlide(7)"
+                            alt="product" /></a></li>
+                <li><a href="#"><img src="img/product-img04.jpg" onclick="openModal();currentSlide(8)"
+                            alt="product" /></a></li>
+            </ul>
+
+        </div>
+
+    </section>
+    <!-- Secondary Menu End -->
+    <!-- Responsive Menu Start -->
+    <section>
+        <div class="mobileMenuWrapper">
+            <a href="#" class="closeBtnMobile">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+            <a href="#" class="logo-m"><img src="img/logo.png" alt="logo" title="logo" /></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="mobile-dropdown-toggle"><a href="#" class="plus-arrow">Pages</a>
+                        <ul>
+                            <li><a href="#">Landing Page</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Shop</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menus</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- Responsive Menu Start -->
+    <!-- Modal Popup In Secondary Menu Start -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="img/product-img01.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/product-img02.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/product-img03.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/product-img04.jpg">
+            </div>
+            <div class="mySlides">
+                <img src="img/product-img01.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/product-img02.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/product-img03.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/product-img04.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <!-- Modal Popup In Secondary Menu End -->
+    <script src="js/custom.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/teamSlider.js"></script>
+</body>
+
+</html>
